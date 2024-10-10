@@ -7,12 +7,21 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        MyImageQr(),
-        TitleProfile(),
-      ],
+    final color = Theme.of(context).colorScheme;
+
+    return Scaffold(
+       backgroundColor: Colors.white,
+       appBar: AppBar(
+        backgroundColor: Colors.pinkAccent,
+        title: Text('Mi perfil', style: TextStyle(color: color.onPrimary)),
+      ),
+      body: const Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          MyImageQr(),
+          TitleProfile(),
+        ],
+      ),
     );
   }
 }

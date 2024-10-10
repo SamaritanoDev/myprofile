@@ -10,18 +10,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = Theme.of(context).colorScheme;
 
     return MaterialApp(
       theme: ThemeData(colorSchemeSeed: Colors.pinkAccent),
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.pinkAccent,
-          title: Text('Mi perfil', style: TextStyle(color: color.onPrimary)),
-        ),
-        body: const ProfilePage(),
-      ),
+      home: const ProfilePage(),
     );
   }
 }
