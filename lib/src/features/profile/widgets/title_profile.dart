@@ -1,15 +1,25 @@
 import 'package:flutter/material.dart';
 
 class TitleProfile extends StatelessWidget {
-  const TitleProfile({super.key});
+  final Color backgroundColor;
+  const TitleProfile({
+    super.key,
+    required this.backgroundColor,
+  });
 
   @override
   Widget build(BuildContext context) {
     final color = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
 
-    final nameTitle = textTheme.headlineMedium?.copyWith(color: color.primary);
-    final subtitleStyle = textTheme.titleSmall;
+    final nameTitle = textTheme.headlineMedium?.copyWith(
+        color: backgroundColor == Colors.pinkAccent
+            ? Colors.white
+            : color.primary);
+    final subtitleStyle = textTheme.titleSmall?.copyWith(
+        color: backgroundColor == Colors.pinkAccent
+            ? Colors.white
+            : color.outline);
 
     return Column(
       children: [
@@ -18,7 +28,9 @@ class TitleProfile extends StatelessWidget {
         Text(
           'Ingeniera de Sistemas e Informática',
           style: TextStyle(
-            color: color.secondary,
+            color: backgroundColor == Colors.pinkAccent
+                ? Colors.white
+                : color.secondary,
             fontWeight: FontWeight.bold,
             fontSize: 20.0,
           ),
