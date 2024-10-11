@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class TitleProfile extends StatelessWidget {
-  final Color backgroundColor;
+  final Color? backgroundColor;
   const TitleProfile({
     super.key,
-    required this.backgroundColor,
+    this.backgroundColor,
   });
 
   @override

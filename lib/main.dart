@@ -10,9 +10,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       theme: ThemeData(colorSchemeSeed: Colors.pinkAccent),
+      //  home: const CustomNavigationBar(),
       home: const ProfilePage(),
     );
   }

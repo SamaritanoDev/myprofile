@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myprofile/src/features/about_me/about_me_page.dart';
 import 'package:myprofile/src/features/profile/widgets/image_qr.dart';
 import 'package:myprofile/src/features/profile/widgets/title_profile.dart';
+import 'package:myprofile/src/shared/custom_navigation_bar.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

@@ -35,6 +35,7 @@ class _BodyAboutMe extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            TitleProfile(),
             SizedBox(height: 20),
             ButtonContact(),
             SizedBox(height: 20),
